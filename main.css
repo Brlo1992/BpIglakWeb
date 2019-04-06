@@ -1,6 +1,20 @@
+:root{
+    --defaultMargin:20px;
+    
+    --defaultPadding:10px;
+
+    --defaultBorder: 2px;
+    --largeBorder: 4px;
+
+    --defaultImageWidth:300px;
+}
 *{
      box-sizing: border-box;
-     margin:0;
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
 }
 
 header{
@@ -26,6 +40,92 @@ footer{
     grid-template-rows: auto;
     grid-template-areas:
         "header header header"
-        "main main sidebar"
+        "main main main"
         "footer footer footer"
+}
+.header-item{
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+a{
+    outline:none; 
+    text-decoration: none; 
+    color:black;
+    height: 100%;
+    width: 100%;
+}
+.header-item:hover{
+    background-color: green;
+    color: white;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.header-container{
+    display: inline-grid;
+    grid-template-columns: 100px,100px,100px,100px;
+    grid-template-rows: 1;
+    grid-template-areas:
+        "header-item header-item header-item header-item"
+}
+section{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h1{
+    color: black;
+}
+
+hr{
+    border-color:green;
+}
+
+.image{
+    padding-bottom: 20px;
+}
+
+.item{
+    border: var(--defaultBorder) solid green;
+    margin: var(--defaultMargin);
+}
+
+.item-details{
+    padding: var(--defaultPadding);
+    text-align: left;
+}
+
+.items-container{
+    display: grid;   
+    grid-template-columns: auto, auto, auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "item item item"
+}
+
+
+.image > img {
+    width:var(--defaultImageWidth);
+}
+
+
+.images-container{
+    display: grid;   
+    grid-template-columns: auto, auto, auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "image image image"
+}
+
+.detailsLeft{
+    font-weight: 600;
+    padding: var(--defaultPadding);
+}
+
+.detailsRight{
+    padding: var(--defaultPadding);
 }

@@ -1,0 +1,31 @@
+*{
+     box-sizing: border-box;
+     margin:0;
+}
+
+header{
+    grid-area: header;
+    background-color: green
+}
+main{
+    grid-area: main;
+    background-color: greenyellow
+}
+aside{
+    grid-area: sidebar;
+    background-color: green
+}
+footer{
+    grid-area: footer;
+    background-color: green
+}
+
+.container{
+    display: grid;   
+    grid-template-columns: 100px, auto, 100px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        "main main sidebar"
+        "footer footer footer"
+}

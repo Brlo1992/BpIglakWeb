@@ -187,27 +187,7 @@
                 <h1>Kontakt</h1>
             </div>
             <div>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, dignissimos deleniti culpa magnam
-                corrupti vel ullam neque quaerat! Iure, debitis soluta animi sed iste sapiente mollitia quisquam vitae
-                rerum nobis.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, dignissimos deleniti culpa magnam
-                corrupti vel ullam neque quaerat! Iure, debitis soluta animi sed iste sapiente mollitia quisquam vitae
-                rerum nobis.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, dignissimos deleniti culpa magnam
-                corrupti vel ullam neque quaerat! Iure, debitis soluta animi sed iste sapiente mollitia quisquam vitae
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, dignissimos deleniti culpa magnam
-                corrupti vel ullam neque quaerat! Iure, debitis soluta animi sed iste sapiente mollitia quisquam vitae
-                rerum nobis.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, dignissimos deleniti culpa magnam
-                corrupti vel ullam neque quaerat! Iure, debitis soluta animi sed iste sapiente mollitia quisquam vitae
-                rerum nobis.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, dignissimos deleniti culpa magnam
-                corrupti vel ullam neque quaerat! Iure, debitis soluta animi sed iste sapiente mollitia quisquam vitae
-                rerum nobis.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, dignissimos deleniti culpa magnam
-                corrupti vel ullam neque quaerat! Iure, debitis soluta animi sed iste sapiente mollitia quisquam vitae
-                rerum nobis.
-                rerum nobis.
+                <div id="map"></div>
             </div>
             <div>
                 <hr />
@@ -216,6 +196,19 @@
     </main>
     <footer>sadsadsad</footer>
     <script src="main.js"></script>
+    <script>
+        function initMap() {
+            let company = {
+                lng: 49.67,
+                lat: 19.21
+            };
+            let map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 17, center: company });
+            let marker = new google.maps.Marker({ position: company, map: map });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN9pHCAmY08lHw7kANc_w6uQEyIn6ZR2g&callback=initMap"></script>
 </body>
 
 </html>

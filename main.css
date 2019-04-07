@@ -129,3 +129,9 @@ hr{
 .detailsRight{
     padding: var(--defaultPadding);
 }
+
+#map {
+    margin:auto;
+    height: 300px;  /* The height is 400 pixels */
+    width: 500px;  /* The width is the width of the web page */
+}

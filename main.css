@@ -23,7 +23,7 @@ header{
 }
 main{
     grid-area: main;
-    background-color: greenyellow
+    background-color: #7ebb6c
 }
 aside{
     grid-area: sidebar;
